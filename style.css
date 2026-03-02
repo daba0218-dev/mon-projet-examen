@@ -271,8 +271,9 @@ li a:hover{
     flex-wrap: wrap;
     margin-top: 30px;
    }
-   @media (max-width: 600px){ /* cette regle ne s'applique que si l'ecran fait moins de 600px exemple sur les smartphone*/ 
+   @media (max-width: 780px){ /* cette regle ne s'applique que si l'ecran fait moins de 600px exemple sur les smartphone*/ 
     .menu{
+        display: flex;
         flex-direction: column;
         align-items:center ;
     }
