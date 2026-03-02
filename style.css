@@ -1,0 +1,425 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(254, 252, 245);
+    overflow-x: hidden;
+    width: 100%;
+
+    
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50%;
+    background-color: rgb(240, 9, 9);
+    position: sticky;
+    top: 0;
+    z-index: 1000;/* gere la supperposition */
+    
+}
+.monlogo{
+    width: 200px;
+    height: 100px;
+    border-radius: 30%;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+li a{
+    color: rgba(220, 220, 11, 0.831);
+    font-size: 10p;
+    padding: 3px;
+    border-radius: 10px;
+
+}
+li a:hover{
+    background-color: black;
+}
+.font{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(photo0.jpeg);/*supperposer une degradé semi transparent au dessus de l'image de fond*/
+    background-size: cover; /* image couvre toutes l'espace*/
+    background-position: center;/* image center*/
+    color: white;
+    justify-content: center;/* center hoz*/
+    align-items: center;;/* center ver*/
+    min-height:150vh;/* effet plein d'ecran*/ 
+    margin: 0;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.font h1{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 50px;
+    margin-bottom: 60px;
+    text-shadow:  2px 2px 8px rgba(0, 0, 0, 0.8);/* ombre noir poue la lisibilité*/
+    }
+    .font p{
+        max-width: 900px;
+        font-size: 20px;
+        line-height: 40px;
+        margin-bottom: 0;
+      
+    }
+    .video-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 35%;
+        padding: 40px 0;
+        flex-wrap: wrap;/* pour qu'il soit visible sur autre mobile*/
+        margin-top: 30px;
+        
+    }
+    .video-container video{
+        width: 30%;
+        min-width: 100px;
+        border-radius: 50%;
+        box-shadow: 0 4px 15px rgb(0, 0, 0 ,0.3);
+    }
+    .btn-menu{
+        display: inline-block;
+        margin-top: 40px;
+        padding: 15px 35px;
+        background-color: #f00909;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;/* met le texte en gras*/
+        border-radius: 50px;
+        transition: 0.4px;/* duree de l]animation lors de la passage du souris*/
+         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* ajouter une lueur rouge sur le bouton*/
+    }
+     .btn-menu:hover{
+        background-color: white;
+        color: #f00909; 
+        letter-spacing: 2px;
+     }
+    h2{
+        text-align: center;
+    }
+    .apropos{
+        background-image: url(ph\ app.jpeg);
+        background-size: cover;/* l'image couvrira tout l'espace sans ce répeter*/
+        width:100%;
+        height:800px ;
+        color: white;
+        font-family: serif;
+        margin: 0;
+        padding: 200px 0;
+       text-align: center;
+       background-color: rgba(0, 0, 0, 0.6);
+       background-blend-mode: overlay; /* gere le couleur de fond avec d'autre couleur*/
+    
+       }
+       .info{
+        background: rgba(0, 0, 0, 0.5);/* rectangle noir transparent dernier le texte*/
+        border-radius: 15px;
+        border:  2px solid #D4A373; /* une couleur dorée*/;
+        padding: 40px;
+        margin: 40px ;
+       }
+         
+    .info h1{
+        font-size: 3rem;/* plus grend qu'on ne voit que lui */
+        text-transform: uppercase;/* tout en maj*/
+        text-decoration: none;
+        text-align: center;
+        color:#ffd700;
+        text-shadow:  2px 2px 10px rgba(0, 0, 0, 0.8);/* ombre noir poue la lisibilité*/
+        letter-spacing: 2px;
+    }
+    .info h2{
+        text-align: center;
+        border-bottom: 2px solid #D4A373; /* une couleur dorée*/
+        display: inline-block;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+        
+    }
+    .info p{
+        text-align: center;
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        margin: 0 auto 20px auto;/* centre le texte et ajoute l'espace en bas*/
+    }
+    .contact-container{
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+    }
+    .contact{
+     background-image: url(photo00.jpeg);
+     background-size: cover;
+     color: white;
+     justify-content: center;
+     align-items: center;
+     height: 1000px;
+     margin: 0;
+     padding: 0;
+     display: flex;
+     flex-direction: column;
+     gap: 60px;
+    }
+    .contact h1{
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .cont{
+        font-size: 20px;
+        text-align: center;
+        display: flex;
+        gap: 30px;
+        width: 25%;
+        border: 1px solid;
+        border-radius: 10px;
+        background-color: aliceblue;
+        color: black;
+        padding: 30px;
+        background: rgb(255, 255, 255,0.15);
+    }
+    input{
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0px;
+        background:white;
+        color: black;
+        box-sizing: border-box;
+    }
+    label{
+         width: 100%;
+        padding: 0px;
+        margin: 0px;
+        text-shadow: 1px 1px 2px rgba(3, 2, 2, 0.8);
+    }
+    button{
+        background-color: gold;
+        color: black;
+        cursor: pointer;
+        border-radius: 5px;
+        border: none;
+        padding: 10px;
+        text-align: center;
+        
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 300px;
+        
+    }
+    textarea{
+        width: 90%;
+        padding: 5px;
+        margin: 10px;
+         background:white;
+        box-sizing: border-box;
+    }
+    iframe{
+        width: 400px;
+        height: auto;
+    }
+    
+    .ouvert {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30%;
+        margin: 10px;
+        background-color: rgb(211, 171, 50);
+         margin: 0;
+         padding: 10px 0;
+}
+.suivi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+    margin: 0;
+    padding: 10px 0;
+}
+.suivi img{
+    width: 30px;
+    height: 30px;
+}
+.platsucrée{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(photomenu.jpeg);/*supperposer une degradé semi transparent au dessus de l'image de fond*/
+    background-size: cover;/* l'image couvrira tout l'espace sans ce répeter*/
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 50px 0;
+    width: 100%;
+   
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+   }
+   @media (max-width: 600px){ /* cette regle ne s'applique que si l'ecran fait moins de 600px exemple sur les smartphone*/ 
+    .menu{
+        flex-direction: column;
+        align-items:center ;
+    }
+   }
+h3{
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    width: 100%;
+    font-family:'Lucida Sans';
+    color: white;
+  }
+h4{
+      background-color: gold;
+}
+
+
+.cards {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);/* cree une ombre portée*/
+    transition: 0.3s;/* durée animation pour tout les changement style*/
+    width: 280px;
+    background-color: white;
+    border: solid 3px maroon ;
+    padding: 10px; 
+    border-radius: 30%;
+    display: flex;flex-direction: column;
+    align-items: center;
+    overflow: hidden;/* cache des contenue qui depasse ou qui deborde*/
+    text-align: center;
+}
+.cards:hover{
+    transform: translateY(-5px);/* deplacer leacard vers le haut quand la souris passe dessus*/
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+    
+
+
+.cards img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;/* recadre l'image pour quelle remplisse espace sans déborder*/
+    border-radius: 30%;
+    display: block;
+    margin-bottom: 10%;
+   }
+   .cards ul{
+    list-style: none;
+    padding: 0;
+   }
+   .cards ul li{
+    display: inline-block;
+    margin: 5px;
+   }
+   .platsalée{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(photomenu.jpeg);/*supperposer une degradé semi transparent au dessus de l'image de fond*/
+    background-size: cover;/* l'image couvrira tout l'espace sans ce répeter*/
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 50px 0;
+    width: 100%;
+   
+
+}
+.menu-sale{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    text-align: center;
+   
+   }
+   .menu-salee{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 20px;
+ } 
+  footer{
+    background-color:rgb(35, 34, 34);
+     width: 100%;
+     position: relative;
+     min-height: 200px; 
+     padding: 40px 0;
+     display: block;
+     justify-content: center;
+     align-items: center;
+     color: white;
+     text-align: center;
+     font-family: Arial,sans-serif;
+      border-top: #f00909;
+      box-sizing: border-box;
+      margin-top: 0;
+ }
+ .footer-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;/* s'adapter pour mobile*/
+    gap: 30px;
+    margin: 0 auto;
+    max-width: 1200px;
+ }
+ .footer-info{
+    flex: 1;/* chaque collone prend la m largueur*/
+    min-width: 250px;
+}
+.footer-info h3{
+    color: #f00909;
+    margin-bottom: 20px;
+    font-size: 22px;
+    text-transform: uppercase;
+    
+}
+.footer-link li{
+      margin-top: 10px;
+}
+.footer-link a{
+   color: #cccccc;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.footer-link a:hover{
+    color: white;
+    padding-left: 5px;
+}
+.footer-bottom{
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    font-size: 14px;
+    color: #888;
+}
+
+
+
+
+
+
