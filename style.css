@@ -42,11 +42,11 @@ li a:hover{
 }
 .font{
     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(photo0.jpeg);/*supperposer une degradé semi transparent au dessus de l'image de fond*/
-    background-size: cover; /* image couvre toutes l'espace*/
-    background-position: center;/* image center*/
+    background-size: cover; 
+    background-position: center;
     color: white;
-    justify-content: center;/* center hoz*/
-    align-items: center;;/* center ver*/
+    justify-content: center;
+    align-items: center;;
     min-height:150vh;/* effet plein d'ecran*/ 
     margin: 0;
     padding-bottom: 50px;
@@ -120,7 +120,7 @@ li a:hover{
     
        }
        .info{
-        background: rgba(0, 0, 0, 0.5);/* rectangle noir transparent dernier le texte*/
+        background: rgba(0, 0, 0, 0.5);
         border-radius: 15px;
         border:  2px solid #D4A373; /* une couleur dorée*/;
         padding: 40px;
@@ -271,7 +271,7 @@ li a:hover{
     flex-wrap: wrap;
     margin-top: 30px;
    }
-   @media (max-width: 780px){ /* cette regle ne s'applique que si l'ecran fait moins de 600px exemple sur les smartphone*/ 
+   @media (max-width: 780px){ 
     .menu{
         display: flex;
         flex-direction: column;
